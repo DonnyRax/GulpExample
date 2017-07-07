@@ -1,1 +1,0 @@
-{"version":3,"sources":["components/_buttons.scss","base/_colours.scss"],"names":[],"mappings":"AAGA;EACI,aAJgB;EAKhB,aAJgB;EAKhB,YCLa,EDMhB","file":"app.css","sourcesContent":["$button-height: 50px;\r\n$button-width: 100px;\r\n\r\n.btn {\r\n    height: $button-height;\r\n    width: $button-width;\r\n    color: $text-color;\r\n}","$brand-color: #099;\r\n$text-color: #0f0;"]}

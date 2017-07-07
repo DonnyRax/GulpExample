@@ -10,6 +10,14 @@ gulp.task('css', function () {
         .pipe(sourcemaps.init())
         .pipe(sass().on("error", sass.logError))
         .pipe(autoprefixer('last 4 version'))
+        .pipe(gulp.dest("public/css/"));
+});
+
+gulp.task('css-min', function () {
+    return gulp.src("app/styles/app.scss")
+        .pipe(sourcemaps.init())
+        .pipe(sass().on("error", sass.logError))
+        .pipe(autoprefixer('last 4 version'))
         .pipe(cssnano({
             zindex: false
         }))
@@ -20,6 +28,6 @@ gulp.task('css', function () {
         .pipe(gulp.dest("public/css/"));
 });
 
-gulp.task('default', ['css'], function () {
-    gulp.watch(["app/styles/*/*.scss"], ['css']);
+gulp.task('default', ['css','css-min'], function () {
+    gulp.watch(["app/styles/*/*.scss"], ['css','css-min']);
 });

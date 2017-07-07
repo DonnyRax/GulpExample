@@ -1,6 +1,15 @@
 .btn {
   height: 50px;
   width: 100px;
-  color: #0f0; }
+  color: yellow; }
+  .btn.btn-default {
+    background-color: #099; }
 
-/*# sourceMappingURL=app.css.map */
+input.form-control {
+  border: 2px solid #099; }
+
+.jumbotron {
+  background-color: #099;
+  color: yellow;
+  font-size: 3em;
+  text-align: center; }
