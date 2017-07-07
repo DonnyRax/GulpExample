@@ -1,0 +1,12 @@
+$button-height: 50px;
+$button-width: 100px;
+
+.btn {
+    height: $button-height;
+    width: $button-width;
+    color: $text-color;
+
+    &.btn-success {
+        background-color: $brand-color;
+    }
+}
